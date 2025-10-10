@@ -1,10 +1,12 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
-const { engine } = require('express-handlebars'); // ✅ đúng cú pháp mới
-
+const { engine } = require('express-handlebars');
 const app = express();
 const port = 3000;
+
+// static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 // http logger
 app.use(morgan('dev'));
