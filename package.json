@@ -14,7 +14,7 @@
   "license": "ISC",
   "description": "",
   "lint-staged": {
-    "src/**/*.{js,css,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    "**/*.{js,css,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "dependencies": {
     "express": "^5.1.0",
